@@ -8,230 +8,96 @@
 <head>
     <meta charset="utf-8">
     <title>Planning Event</title>
-
-	 <p style="border: 3px  Ridge"
-
-<div class="topnav">
-  <a  href="index.html" style = "margin-left : 20px" padding-left: "20px">Home</a>
-  <a href="About us.html"style = "margin-left : 20px" padding-left : "20px">AboutUs</a>
-  <a class="active" href="#planning"style = "margin-left : 20px"padding-left : "20px">Planning</a>
-  <a href="booking.html"style = "margin-left : 20px"padding-left : "20px">Booking</a>
-    <a href="#"style = "margin-left : 20px"padding-left : "20px">ContactUs</a>
-</div></p>
-    <style>
-        /* Use Times or a fallback serif font */
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #fffaf0;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* Heading styling */
-        h1 {
-            color: #a52a2a;
-            text-align: left;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            color: #34495e;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-
-        /* Paragraph styling */
-        p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-        }
-
-        label {
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* Textarea and input fields styling */
-        textarea,
-        select,
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="date"],
-        input[type="time"],
-        input[type="file"] {
-            width: 40%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 2px solid #6495ed; /* Solid border for better visibility */
-            border-radius: 5px;
-            font-size: 1em;
-            transition: border-color 0.3s ease; /* Smooth transition for focus effect */
-        }
-
-        /* Focus effect */
-        textarea:focus,
-        select:focus,
-        input:focus {
-            border-color: #3498db; /* Change border color on focus */
-            background-color: #f0f8ff;
-            outline: none;
-        }
-
-        /* Button styling */
-        button {
-            background-color: #32cd32;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em; /* Slightly larger font size */
-            cursor: pointer;
-            margin-right: 10px;
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
-
-        button[type="reset"] {
-            background-color: #778899;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        button[type="reset"]:hover {
-            background-color: #d3d3d3;
-        }
-
-        /* Error message styling */
-        .error {
-            color: #e74c3c;
-            font-size: 0.9em;
-            margin-top: -10px;
-            margin-bottom: 15px;
-        }
-
-        /* Image container styling */
-        .image-container {
-            float: right; /* Aligns the image container to the right */
-            width: 25%; /* Sets the width of the image container */
-            margin-left: 20px;
-        }
-
-        .side-image {
-            display: block; /* Ensures each image is on a new line */
-            width: 90%; /* Ensures the images fit within the container */
-            margin-bottom: 5px; /* Adds space between the images */
-            border-radius: 10px; 
-        }
-    </style>
+	
 </head>
 
 <body>
 
-    <h1>Bring Your Event Vision to Life</h1>
-	
-	<div class="image-container">
-        <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Events.jpg?raw=true" alt="Events" class="side-image">
-        <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Plan%20Event.jpg?raw=true" alt="Plan Event" class="side-image">
+<h1>Bring Your Event Vision to Life</h1>
+
+<!-- Event Selection Section -->
+<p>
+<strong>Select your Event:</strong>
+<br>
+<input type="radio" id="wedding" name="selectevent" value="Wedding" required>
+<label for="wedding">Wedding</label>
+
+<input type="radio" id="babyshower" name="selectevent" value="Baby Shower" required>
+<label for="babyshower">Baby Shower</label>
+
+<input type="radio" id="birthdayparty" name="selectevent" value="Birthday Party" required>
+<label for="birthdayparty">Birthday Party</label>
+
+<input type="radio" id="workshop" name="selectevent" value="Workshop" required>
+<label for="workshop">Workshop</label>
+
+<input type="radio" id="other" name="selectevent" value="Other" required>
+<label for="other">Other</label>
+</p>
+
+<!-- Event Description Section -->
+<p>
+<label for="describe"><strong>Describe your Event:</strong></label>
+<br>
+<textarea id="describe" name="describe" rows="6" cols="50" placeholder="Describe the theme, style, and goal of your event" required></textarea>
+</p>
+
+<h1>Explore Recent Events</h1>
+
+    <!-- Event Gallery Section -->
+    <div class="gallery">
+        <div class="event-card">
+            <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Wedding2.jpg?raw=true" width="280" height="190" alt="Wedding Event">
+            <h3 class="event-title">Elegant Wedding</h3>
+            <p class="event-description">A luxurious ballroom wedding in an elegant venue.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Corporate.jpeg?raw=true" width="280" height="190" alt="Corporate Meeting">
+            <h3 class="event-title">Corporate Meeting</h3>
+            <p class="event-description">A professional corporate meeting in a modern conference room.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Birthday.jpeg?raw=true" width="280" height="190" alt="Birthday Party">
+            <h3 class="event-title">Birthday Party</h3>
+            <p class="event-description">Colorful Play Zone for an Exciting Kid's Birthday Party.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Tea%20Party.jpeg?raw=true" width="280" height="190" alt="Tea Party">
+            <h3 class="event-title">Tea Party</h3>
+            <p class="event-description">Tea Party with beautiful tea set and garden flowers.</p>
+        </div>
+
     </div>
 
-    <form id="eventForm" method="post">
+<!-- Event Storyboard Upload Section -->
+<p>
+<strong>Upload Event Storyboard:</strong>
+<br>
+<label for="storyboard">Share your creative vision to make your event unforgettable.</label>
+<br>
+<input type="file" id="storyboard" name="storyboard" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx">
+</p>
 
-        <!-- Event Selection Section -->
-        <p>
-            <strong>Select your Event:</strong><br>
-            <input type="radio" id="wedding" name="selectevent" value="Wedding" required>
-            <label for="wedding">Wedding</label>
+<!-- Approval Checkbox Section -->
+<p>
+<input type="checkbox" id="confirm" name="confirm" value="confirm" required>
+<label for="confirm"><strong>I confirm that the details provided are accurate and I approve proceeding with the event planning process.</strong></label>
+</p>
 
-            <input type="radio" id="babyshower" name="selectevent" value="Baby Shower" required>
-            <label for="babyshower">Baby Shower</label>
+<!-- Submit and Reset Buttons -->
+<p>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</p>
 
-            <input type="radio" id="birthdayparty" name="selectevent" value="Birthday Party" required>
-            <label for="birthdayparty">Birthday Party</label>
-
-            <input type="radio" id="workshop" name="selectevent" value="Workshop" required>
-            <label for="workshop">Workshop</label>
-
-            <input type="radio" id="other" name="selectevent" value="Other" required>
-            <label for="other">Other</label>
-        </p>
-
-        <!-- Event Description Section -->
-        <p>
-            <label for="describe"><strong>Describe your Event:</strong></label><br>
-            <textarea id="describe" name="describe" rows="6" cols="50" placeholder="Describe the theme, style, and goal of your event" required></textarea>
-        </p>
-
-        <!-- Venue Selection Section -->
-        <p>
-            <label for="venue"><strong>Choose a Venue:</strong></label>
-            <select id="venue" name="venue" required>
-                <option value="">--Select a Venue--</option>
-                <option value="Garden Hall">Garden Hall</option>
-                <option value="Private Lounge">Private Lounge</option>
-                <option value="Banquet Hall">Banquet Hall</option>
-                <option value="Fun Zone">Fun Zone</option>
-                <option value="Conference Room">Conference Room</option>
-                <option value="Art Gallery">Art Gallery</option>
-                <option value="Open Air Theater">Open Air Theater</option>
-            </select>
-        </p>
-
-        <!-- Event Date Section -->
-        <p>
-            <label for="date"><strong>Event Date:</strong></label>
-            <input type="date" id="date" name="date" required>
-        </p>
-
-        <!-- Event Time Section -->
-        <p>
-            <label for="eventTime"><strong>Event Time:</strong></label>
-            <input type="time" id="eventTime" name="eventTime" required>
-        </p>
-
-        <!-- Event Storyboard Upload Section -->
-        <p>
-            <strong>Upload Event Storyboard:</strong><br>
-            <label for="storyboard">Share your creative vision to make your event unforgettable.</label><br>
-            <input type="file" id="storyboard" name="storyboard" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx" required>
-        </p>
-
-        <!-- Contact Information Section -->
-        <h3>Contact Information</h3>
-
-        <!-- Name Input -->
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-        </p>
-
-        <!-- Email Input -->
-        <p>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required>
-        </p>
-
-        <!-- Phone Number Input -->
-        <p>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="\+971-[0-9]{3}-[0-9]{7}" placeholder="+971-XXX-XXXXXXX" required>
-        </p>
-
-        <!-- Approval Checkbox Section -->
-        <p>
-            <input type="checkbox" id="confirm" name="confirm" value="confirm" required>
-            <label for="confirm"><strong>I confirm that the details provided are accurate and I approve proceeding with the event planning process.</strong></label>
-        </p>
-
-        <!-- Submit and Reset Buttons -->
-        <p>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </p>
-    </form>
+<footer>
+<div>
+    <p>© 2024 Evonaire. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
