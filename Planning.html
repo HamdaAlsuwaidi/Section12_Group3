@@ -8,51 +8,54 @@
 <head>
     <meta charset="utf-8">
     <title>Planning Event</title>
-	
+    <link rel="stylesheet" href="planningStyle.css">
 </head>
 
 <body>
-<h1>Evonaire</h1>
-	 <p style="border: 3px  Ridge"
+    <h1>Evonaire</h1>
+    
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="index.html" style="margin-left: 20px;">Home</a>
+        <a href="About us.html" style="margin-left: 20px;">About Us</a>
+        <a class="active" href="#planning" style="margin-left: 20px;">Planning</a>
+        <a href="booking.html" style="margin-left: 20px;">Booking</a>
+        <a href="#" style="margin-left: 20px;">Contact Us</a>
+    </div>
+    
+    <br>
+    
+    <!-- Introduction Image -->
+    <div class="intro">
+        <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/blob/main/Images/Event003.png?raw=true" width="500" height="400" alt="Bring your Event vision to life!">
+    </div>
 
-<div class="topnav">
-  <a  href="index.html" style = "margin-left : 20px" padding-left: "20px">Home</a>
-  <a href="About us.html"style = "margin-left : 20px" padding-left : "20px">AboutUs</a>
-  <a class="active" href="#planning"style = "margin-left : 20px"padding-left : "20px">Planning</a>
-  <a href="booking.html"style = "margin-left : 20px"padding-left : "20px">Booking</a>
-    <a href="#"style = "margin-left : 20px"padding-left : "20px">ContactUs</a>
-</div></p>
-	<br>
-<h1>Bring Your Event Vision to Life</h1>
+    <!-- Event Selection Section -->
+    <p>
+        <strong>Select your Event:</strong><br>
+        <input type="radio" id="wedding" name="selectevent" value="Wedding" required>
+        <label for="wedding">Wedding</label>
 
-<!-- Event Selection Section -->
-<p>
-<strong>Select your Event:</strong>
-<br>
-<input type="radio" id="wedding" name="selectevent" value="Wedding" required>
-<label for="wedding">Wedding</label>
+        <input type="radio" id="babyshower" name="selectevent" value="Baby Shower" required>
+        <label for="babyshower">Baby Shower</label>
 
-<input type="radio" id="babyshower" name="selectevent" value="Baby Shower" required>
-<label for="babyshower">Baby Shower</label>
+        <input type="radio" id="birthdayparty" name="selectevent" value="Birthday Party" required>
+        <label for="birthdayparty">Birthday Party</label>
 
-<input type="radio" id="birthdayparty" name="selectevent" value="Birthday Party" required>
-<label for="birthdayparty">Birthday Party</label>
+        <input type="radio" id="workshop" name="selectevent" value="Workshop" required>
+        <label for="workshop">Workshop</label>
 
-<input type="radio" id="workshop" name="selectevent" value="Workshop" required>
-<label for="workshop">Workshop</label>
+        <input type="radio" id="other" name="selectevent" value="Other" required>
+        <label for="other">Other</label>
+    </p>
 
-<input type="radio" id="other" name="selectevent" value="Other" required>
-<label for="other">Other</label>
-</p>
+    <!-- Event Description Section -->
+    <p>
+        <label for="describe"><strong>Describe your Event:</strong></label><br>
+        <textarea id="describe" name="describe" rows="6" cols="50" placeholder="Describe the theme, style, and goal of your event" required></textarea>
+    </p>
 
-<!-- Event Description Section -->
-<p>
-<label for="describe"><strong>Describe your Event:</strong></label>
-<br>
-<textarea id="describe" name="describe" rows="6" cols="50" placeholder="Describe the theme, style, and goal of your event" required></textarea>
-</p>
-
-<h1>Explore Recent Events</h1>
+    <h1>Explore Recent Events</h1>
 
     <!-- Event Gallery Section -->
     <div class="gallery">
@@ -79,35 +82,32 @@
             <h3 class="event-title">Tea Party</h3>
             <p class="event-description">Tea Party with beautiful tea set and garden flowers.</p>
         </div>
-
     </div>
 
-<!-- Event Storyboard Upload Section -->
-<p>
-<strong>Upload Event Storyboard:</strong>
-<br>
-<label for="storyboard">Share your creative vision to make your event unforgettable.</label>
-<br>
-<input type="file" id="storyboard" name="storyboard" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx">
-</p>
+    <!-- Event Storyboard Upload Section -->
+    <p>
+        <strong>Upload Event Storyboard:</strong><br>
+        <label for="storyboard">Share your creative vision to make your event unforgettable.</label><br>
+        <input type="file" id="storyboard" name="storyboard" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx">
+    </p>
 
-<!-- Approval Checkbox Section -->
-<p>
-<input type="checkbox" id="confirm" name="confirm" value="confirm" required>
-<label for="confirm"><strong>I confirm that the details provided are accurate and I approve proceeding with the event planning process.</strong></label>
-</p>
+    <!-- Approval Checkbox Section -->
+    <p>
+        <input type="checkbox" id="confirm" name="confirm" value="confirm" required>
+        <label for="confirm"><strong>I confirm that the details provided are accurate and I approve proceeding with the event planning process.</strong></label>
+    </p>
 
-<!-- Submit and Reset Buttons -->
-<p>
-<button type="submit">Submit</button>
-<button type="reset">Reset</button>
-</p>
+    <!-- Submit and Reset Buttons -->
+    <form>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
 
-<footer>
-<div>
-    <p>© 2024 Evonaire. All rights reserved.</p>
-  </div>
-</footer>
+    </form>
 
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Evonaire. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
