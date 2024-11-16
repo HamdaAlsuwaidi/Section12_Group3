@@ -25,7 +25,10 @@ h3 {
   overflow: hidden;
   margin-bottom: 20px;
 }
+.recetEvent{
+background-color:#f4e6b1;
 
+}
 .topnav a {
   color: white;
   padding: 14px 20px;
