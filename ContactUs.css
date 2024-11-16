@@ -1,0 +1,61 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC; /* beige from the palette */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4A5568; /* Dark gray for title */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #2C363F; /* Darker navy for form section */
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        h3 {
+            color: #c8aa69; /* Gold for section headers */
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #D4A857; /* Gold for button */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FFDD99; /* Lighter gold for hover */
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 20px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        h4 {
+            color: #FFDD99; /* Pale gold for subheadings */
+        }
