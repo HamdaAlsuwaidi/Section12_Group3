@@ -6,6 +6,7 @@
   <title>Booking Page</title>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="bookingcssFile.css">
+">
 </head>
 <body>
   <h1>Evonaire</h1>
@@ -68,36 +69,40 @@
   </div>
 
   <!-- Footer Section in Three Columns -->
-  <footer>
-    <div>
+  <footer class="row">
+    <div class="col-third">
       <h3>Contact Us</h3>
       <p>Email: <a href="mailto:info@Evonaire.com">info@Evonaire.com</a></p>
       <p>Phone: +971-456-7890</p>
       <p>Address: University of Sharjah, UAE</p>
     </div>
-    <div>
+
+    <div class="col-third">
       <h3>Follow Us</h3>
       <a href="https://facebook.com">Facebook</a> | 
       <a href="https://instagram.com">Instagram</a> | 
       <a href="https://twitter.com">Twitter</a>
     </div>
-    <div>
+
+    <div class="col-third">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="About us.html">About Us</a></li>
         <li><a href="Planning.html">Planning</a></li>
-        <li><a href="booking.html">Booking</a></li>
+        <li><a href="#booking">Booking</a></li>
         <li><a href="Contact Us.html">Contact Us</a></li>
       </ul>
     </div>
-    <div>
+
+    <div class="col-full">
       <h3>Newsletter</h3>
       <form method="post" action="http://www.deitel.com">
-         <label for="newsletter-email">Stay updated with our latest events and offers:</label><br>
-        <input type="email" id="email" name="email" placeholder="Your email address">
+        <label for="newsletter-email">Stay updated with our latest events and offers:</label><br>
+        <input type="email" id="newsletter-email" name="email" placeholder="Your email address">
         <button type="submit">Subscribe Now</button>
       </form>
+      <p>© 2024 Evonaire. All rights reserved.</p>
     </div>
   </footer>
 </body>
