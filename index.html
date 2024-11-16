@@ -8,7 +8,27 @@
 
 </head>
 <body>
+<div>
 
+      <div class="popup" id="popup">
+        <h2>Welcome to Evonaire</h2>
+        <p>Where your event planning dreams come to life. Let us help you create unforgettable moments!.</p>
+        <button type="button" onclick="closePopup()">Ok</button>
+      </div>
+    </div>
+
+    <script>
+      let popup = document.getElementById("popup");
+
+    
+      window.onload = function() {
+        popup.classList.add("open-popup");
+      };
+
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
 
   <header>
     <h1>Evonaire</h1>
