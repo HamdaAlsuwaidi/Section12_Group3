@@ -1,4 +1,4 @@
-/* Reset margins and paddings for elements */
+
 body, h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
@@ -19,7 +19,6 @@ h3 {
   color: #dabf81;
 }
 
-/* Navigation bar */
 .topnav {
   background-color: #1f333a;
   overflow: hidden;
@@ -38,7 +37,7 @@ h3 {
   background-color: #dabf81;
 }
 
-/* Headings styling */
+
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -50,7 +49,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Images styling */
+
 .service-images img {
   width: 400px;
   height: 400px;
@@ -65,7 +64,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Recent events section */
+
 .recent-events {
   display: flex;
   justify-content: space-around;
@@ -85,7 +84,7 @@ h2 {
   margin: 10px;
 }
 
-/* Footer styling */
+
 footer {
   background-color: #1f333a;
   color: white;
