@@ -16,10 +16,10 @@ h1, h2, h3 {
 }
 
 h3 {
-   text-align: center;
-  color: #dabf81;
+  color: #1f333a;
 }
 
+/* Navigation bar */
 .topnav {
   background-color: #1f333a;
   overflow: hidden;
@@ -38,7 +38,7 @@ h3 {
   background-color: #dabf81;
 }
 
-
+/* Headings styling */
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -48,12 +48,15 @@ h1 {
 h2 {
   text-align: center;
   margin-top: 20px;
+  position: relative;
+
+
 }
 
 
 .service-images img {
   width: 200px;
-  height: 200px;
+  height: 200pxpx;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,7 +68,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-
+/* Recent events section */
 .recent-events {
   display: flex;
   justify-content: space-around;
@@ -85,7 +88,7 @@ h2 {
   margin: 10px;
 }
 
-
+/* Footer styling */
 footer {
   background-color: #1f333a;
   color: white;
@@ -97,11 +100,13 @@ footer {
 footer h3 {
   margin-bottom: 10px;
   color: #dabf81;
+  text-align:center;
 }
 
 footer a {
   color: white;
   text-decoration: none;
+  
 }
 
 footer a:hover {
@@ -131,5 +136,15 @@ footer button {
 
 footer button:hover {
   background-color: #cfa968;
- 
+  
+  
 }
+.Contact {
+text-align:center;
+
+}
+ul{
+ list-style-type: none;
+}
+
+
