@@ -1,114 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>BookingPage</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+  <h1>Evonaire</h1>
 
-  </head>
-  <body>
-    <h1>Evonaire</h1>
-    <p style="border: 3px  Ridge"
+  <!-- Navigation Section -->
+  <div class="topnav">
+    <a href="index.html" style="margin-left: 20px; padding-left: 20px;">Home</a>
+    <a href="About us.html" style="margin-left: 20px; padding-left: 20px;">About Us</a>
+    <a href="Planning.html" style="margin-left: 20px; padding-left: 20px;">Planning</a>
+    <a class="active" href="#booking" style="margin-left: 20px; padding-left: 20px;">Booking</a>
+    <a href="#" style="margin-left: 20px; padding-left: 20px;">Contact Us</a>
+  </div>
 
-<div class="topnav">
-  <a href="index.html" style = "margin-left : 20px" padding-left: "20px">Home</a>
-  <a href="About us.html"style = "margin-left : 20px" padding-left : "20px">AboutUs</a>
-  <a href="Planning.html"style = "margin-left : 20px"padding-left : "20px">Planning</a>
-  <a class="active" href="#booking"style = "margin-left : 20px"padding-left : "20px">Booking</a>
-    <a href="#"style = "margin-left : 20px"padding-left : "20px">ContactUs</a>
-</div></p>
+  <h2>Make It Unforgettable - Reserve Your Event Planner Now!</h2>
 
-    <br>
-     <h2>Make It Unforgettable Reserve Your Event Planner Now! </h2>
-     <p>
-       <label for="first-name">First Name:</label><br>
-    <input type="text" id="first-name" name="first_name" required><br><br>
+  <!-- Main Form Section in Two Columns -->
+  <div class="row">
+    <div class="col-half">
+      <p>
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first_name" required><br><br>
 
-    <label for="last-name">Last Name:</label><br>
-    <input type="text" id="last-name" name="last_name" required><br><br>
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last_name" required><br><br>
 
-<label>Email:<br>
-<input type="email" name="email" size="25" maxlength="30" required></label>
-</p>
-<p>
-<label>Phone Number:<br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" size="25" maxlength="30" required><br><br>
 
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone" size="25" pattern="\+?[0-9]{0,3}[0-9]{10}" maxlength="14" placeholder="+971-XXX-XXXXXXX" required="+971-XXX-XXXXXXX"><br><br>
+      </p>
+    </div>
 
-<input type="text" size="25" pattern="\+?[0-9]{0,3}[0-9]{10}" maxlength="14"placeholder="+971-XXX-XXXXXXX" placeholder="+971-XXX-XXXXXXX" required >
+    <div class="col-half">
+      <p>
+        <label>What is your occasion?</label><br>
+        <input name="Event" type="radio" value="wedding" id="wedding">
+        <label for="wedding">Wedding</label><br>
+        <input name="Event" type="radio" value="Engagement" id="Engagement">
+        <label for="Engagement">Engagement</label><br>
+        <input name="Event" type="radio" value="Corporate events" id="Corporate-events">
+        <label for="Corporate-events">Corporate Events</label><br>
+        <input name="Event" type="radio" value="Charity events" id="Charity-events">
+        <label for="Charity-events">Charity Events</label><br>
+        <input name="Event" type="radio" value="Birthday parties" id="Birthday-parties">
+        <label for="Birthday-parties">Birthday Parties</label><br><br>
+        
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="100" max="1000" required><br><br>
 
-</label>
-</p>
-<p>
-  
-  <label>What is your occasion  </label><br>
-  <input name="Event" type="radio" value="wedding" id="wedding">
-       <label>wedding</label>
-      <input name="Event" type="radio" value="Engagement" id="Engagement">
-       <label>Engagement</label>
-        <input name="Event" type="radio" value="Corporate events" id="Corporate events">
-       <label>Corporate events</label>
-       <input name="Event" type="radio" value="Charity events" id="Charity events">
-       <label>Charity events</label>
-       <input name="Event" type="radio" value="Birthday parties" id="Birthday parties">
-       <label>Birthday parties</label>
-       
-  <!--radio buttons -->
-  
-  
-  </p>
-  <p>
-<label for="guests">Number of Guests:</label><br=25>
-    <input type="number" id="guests" name="guests" min="100" max="1000" required><br><br>
-    </p>
-
-    <label>Select a Date </label><br>
-    
+        <label>Select a Date:</label><br>
         <label for="date">Choose a date:</label>
         <input type="date" id="date" name="date"><br>
-        
-         <label for="time">Choose a time:</label>
-        <input type="time" id="time" name="time">
-        
-        <p>
-        <input type="submit">
-        </p>
-<footer>
-  <div>
-    <h3>Contact Us</h3>
-    <p>Email: <a href="mailto:info@Evonaire.com">info@Evoniare.com</a></p>
-    <p>Phone: +971-456-7890</p>
-    <p>Address:  University of Sharjah  UAE</p>
-  </div>
-  <div>
-    <h3>Follow Us</h3>
-    <a href="https://facebook.com">Facebook</a> | 
-    <a href="https://instagram.com">Instagram</a> | 
-    <a href="https://twitter.com">Twitter</a> | 
+        <label for="time">Choose a time:</label>
+        <input type="time" id="time" name="time"><br><br>
 
+        <input type="submit" value="Submit">
+      </p>
+    </div>
   </div>
-  <div>
-    <h3>Quick Links</h3>
-    <ul>
-      <li> < href="index.html" >Home</a></li>
-      <li> <a href="About us.html">AboutUs</a></li>
-      <li><a href="Planning.html">Planning</a></li>
-      <li> <a class="active" href="#booking">Booking</a></li>
-      <li> <a href="Contact Us.html">Contact Us</a></li>
-    </ul>
-  </div>
-  <div>
-    <h3>Newsletter</h3>
-    <form method = "post" action = "http://www.deitel.com">
 
-      <label for="email">Stay updated with our latest events and offers:</label>
-      <input type="email" id="email" name="email" placeholder="Your email address">
-      <button type="submit">Subscribe Now</button>
-    </form>
-  </div>
-  
-  <div>
-    <p>© 2024 Evonaire. All rights reserved.</p>
-  </div>
-</footer>
-
-
-  </body>
+  <!-- Footer Section in Three Columns -->
+  <footer>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:info@Evonaire.com">info@Evonaire.com</a></p>
+      <p>Phone: +971-456-7890</p>
+      <p>Address: University of Sharjah, UAE</p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <a href="https://facebook.com">Facebook</a> | 
+      <a href="https://instagram.com">Instagram</a> | 
+      <a href="https://twitter.com">Twitter</a>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Planning.html">Planning</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Newsletter</h3>
+      <form method="post" action="http://www.deitel.com">
+         <label for="newsletter-email">Stay updated with our latest events and offers:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email address">
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+  </footer>
+</body>
 </html>
