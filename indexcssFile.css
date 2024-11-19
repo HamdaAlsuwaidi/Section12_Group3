@@ -1,4 +1,5 @@
 
+
 body, h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
@@ -188,13 +189,13 @@ ul{
   
       
       background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/confeti.gif');
-  background-repeat: no-repeat; 
-  background-position: center;
+
+}
 
       .open-popup {
         visibility: visible;
         top: 50%;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-40%, -40%) scale(1);
       }
 
       .popup h2 {
