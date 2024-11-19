@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evonaire</title>
   <link rel="stylesheet" href="indexcssFile.css">
- <script >
-    let popup = document.getElementById("popup");
-
-    
-      window.onload = function() {
+  <script>
+    window.onload = function () {
+      let popup = document.getElementById("popup");
+      if (popup) {
         popup.classList.add("open-popup");
-      };
+      }
+    };
 
-      function closePopup() {
+    function closePopup() {
+      let popup = document.getElementById("popup");
+      if (popup) {
         popup.classList.remove("open-popup");
-}
-   window.addEventListner("load" ,start , false);
+      }
+    }
   </script>
 </head>
+
 <body>
  
 <div>
