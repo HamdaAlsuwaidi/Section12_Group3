@@ -24,6 +24,9 @@ h3 {
   background-color: #1f333a;
   overflow: hidden;
   margin-bottom: 20px;
+  border-radius: 6px;
+  align-content: center;
+  margin:20px 20px;
 }
 .recetEvent{
 background-color:#f4e6b1;
@@ -39,6 +42,7 @@ background-color:#f4e6b1;
 
 .topnav a:hover, .topnav a.active {
   background-color: #dabf81;
+  border-radius: 6px;
 }
 
 /* Headings styling */
@@ -181,7 +185,13 @@ ul{
         color: #333;
         visibility: hidden;
         transition: transform 0.4s, top 0.4s;
-      }
+  
+      
+      background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/confeti.gif');
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-position: center; /* Centers the image */
+}
 
       .open-popup {
         visibility: visible;
@@ -199,7 +209,7 @@ ul{
         width: 100%;
         margin-top: 50px;
         padding: 10px 0;
-        background: grey;
+        background: #1f333a;
         color: #fff;
         border: 0;
         outline: none;
