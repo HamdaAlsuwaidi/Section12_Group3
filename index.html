@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evonaire</title>
   <link rel="stylesheet" href="indexcssFile.css">
-
-</head>
-<body>
-  <script src="indexScript.js">
+ <script >
     let popup = document.getElementById("popup");
 
     
@@ -19,7 +16,11 @@
       function closePopup() {
         popup.classList.remove("open-popup");
 }
+   window.addEventListner("load" ,start , false);
   </script>
+</head>
+<body>
+ 
 <div>
 
       <div class="popup" id="popup">
