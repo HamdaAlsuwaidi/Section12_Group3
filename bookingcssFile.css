@@ -19,6 +19,9 @@ h2 {
   margin-top: 1em;
   text-align: center;
 }
+h4 {
+  color: #FFFFFF;
+}
 
 /* Navigation Styling */
 /*.topnav a {
@@ -84,7 +87,7 @@ label {
   color: #333;
 }
 
-/* Radio Buttons */
+/* Radio Buttons ----------------------------------------------------------------------------------*/
 input[type="radio"] {
   display: none;
 }
@@ -100,12 +103,31 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label {
-  background-color: #1f333a;
-  color: #fff;
 
+input[type="radio"]:hover + label {
+  background-color: yellow; /* Background color on hover */
 }
 
+input[type="radio"]:checked + label {
+  background-color: yellow; /* Background color when selected */
+  color: #;} /* Dark text color for better contrast when selected */
+
+input[type="text"]{
+  width: 80%; /* Fixed width */
+  padding: 0.5em; /* Smaller padding */
+}
+
+
+  input[type="email"]{
+  width: 80%; /* Fixed width */
+  padding: 0.5em; /* Smaller padding */
+}
+
+input[type="number"]{
+  width: 40%; /* Fixed width */
+  padding: 0.5em; }/* Smaller pad 
+
+----------------------------------------------------------------------------
 /* Row and Column Layout */
 .row {
   display: flex;
