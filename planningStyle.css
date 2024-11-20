@@ -6,6 +6,55 @@ body {
     padding: 20px;
 }
 
+.event-selection, .event-description {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .event-selection strong, .event-description strong {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .event-selection input[type="radio"] {
+        margin-right: 10px;
+        accent-color: #007bff;
+    }
+
+    .event-selection label {
+        font-size: 1.1em;
+        color: #555;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .event-selection label:hover {
+        color: #007bff;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        resize: vertical;
+        transition: border-color 0.3s ease;
+    }
+
+    textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    input[type="radio"]:hover, textarea:hover {
+        background-color: #f0f8ff;
+    }
+
 .intro {
     display: flex;
     justify-content: space-around;
