@@ -93,6 +93,15 @@ input[type="radio"]:hover, textarea:hover {
         background-color: #f0f8ff;
     }
 
+@media (max-width: 768px) {
+        .event-selection, .event-description {
+            padding: 15px;
+        }
+
+        textarea {
+            font-size: 0.95em;
+        }
+    
 .intro {
     display: flex;
     justify-content: space-around;
