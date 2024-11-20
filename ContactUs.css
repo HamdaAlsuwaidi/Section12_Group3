@@ -1,86 +1,46 @@
- 	body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5DC; /* beige from the palette */
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+footer {
+  background-color: #1f333a;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
 
-        h1 {
-            text-align: center;
-            color: #4A5568; /* Dark gray for title */
-        }
+footer h3 {
+  margin-bottom: 10px;
+  color: #dabf81;
+}
 
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #2C363F; /* Darker navy for form section */
-            padding: 20px;
-            border-radius: 15px;
-            color: white;
-        }
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
-        h3 {
-            color: #c8aa69; /* Gold for section headers */
-        }
+footer a:hover {
+  color: #dabf81;
+}
 
-        input, textarea {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-        }
+footer form {
+  margin-top: 10px;
+}
 
-        input[type="submit"] {
-            background-color: #D4A857; /* Gold for button */
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
+footer input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #1f333a;
+}
 
-        input[type="submit"]:hover {
-            background-color: #FFDD99; /* Lighter gold for hover */
-        }
+footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dabf81;
+  color: white;
+  cursor: pointer;
+}
 
-        table {
-            width: 100%;
-            border-spacing: 20px;
-        }
-
-        td {
-            vertical-align: top;
-        }
-
-        p {
-            margin: 5px 0;
-        }
-
-        h4 {
-            color: #FFDD99; /* Pale gold for subheadings */
-        }
-	
-	
-	.topnav {
-    	    background-color: #1f333a;
-   	    overflow: hidden;
-            margin-bottom: 20px;
-	}
-
-	.topnav a {
-            color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-	}
-
-	.topnav a:hover, .topnav a.active {
-            background-color: #dabf81;
-	}
-
-	.intro {
-    	    display: flex;
-    	    justify-content: space-around;
-    	    margin-bottom: 40px;
-	}
+footer button:hover {
+  background-color: #cfa968;
+  background-image: url("https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/pattern.png");
+}
