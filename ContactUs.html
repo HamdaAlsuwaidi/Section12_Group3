@@ -5,11 +5,9 @@
 
 <html>
 <head>
-
     <meta charset="UTF-8">
     <title>Contact Us</title>
-	<link rel="stylesheet" href="ContactUs.css">
-
+    <link rel="stylesheet" href="ContactUs.css">
     <script>
         function confirmSubmission(event) {
             const userConfirmed = confirm("Are you sure you want to submit?");
@@ -18,14 +16,11 @@
             }
         }
     </script>
-	
 </head>
 
 <body>
-
-	<h1>Evonaire</h1>
+    <h1>Evonaire</h1>
     
-   
     <div class="topnav">
         <a href="index.html" style="margin-left: 20px;">Home</a>
         <a href="About us.html" style="margin-left: 20px;">About Us</a>
@@ -41,7 +36,7 @@
     </div>
 
     <div class="container">
-        <form method="post" action="">
+        <form method="post" action="" onsubmit="confirmSubmission(event)">
             <table>
                 <tr>
                     <td width="50%">
@@ -56,8 +51,8 @@
                         <textarea name="Comments" rows="4" placeholder="Enter Text Here!"></textarea><br>
 
                         <input type="submit" name="Send" value="Send">
-                    
-                    	<td width="50%">
+                    </td>
+                    <td width="50%">
                         <h3>Contact Details</h3>
                         <p>Email: Evonaire@gmail.com</p>
                         <p>Phone: +971 50 1234 567</p>
@@ -72,6 +67,41 @@
             </table>
         </form>
     </div>
-</body>
 
+  <footer class="footer">
+    <div class="contact-section">
+      <div>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@Evonaire.com">info@Evonaire.com</a></p>
+        <p>Phone: <a href="tel:+9714567890">+971-456-7890</a></p>
+        <p>Address: University of Sharjah, UAE</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com">Facebook</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://twitter.com">Twitter</a>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Planning.html">Planning</a></li>
+          <li><a href="Booking.html">Booking</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <form method="post" action="http://www.deitel.com">
+        <label for="email">Stay updated with our latest events and offers:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+  </footer>
+
+</body>
 </html>
