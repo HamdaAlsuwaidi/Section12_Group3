@@ -10,6 +10,15 @@
     <title>Contact Us</title>
 	<link rel="stylesheet" href="ContactUs.css">
 
+    <script>
+        function confirmSubmission(event) {
+            const userConfirmed = confirm("Are you sure you want to submit?");
+            if (!userConfirmed) {
+                event.preventDefault();
+            }
+        }
+    </script>
+	
 </head>
 
 <body>
