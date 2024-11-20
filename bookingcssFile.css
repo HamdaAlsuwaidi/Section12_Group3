@@ -81,13 +81,23 @@ input:focus {
   border-color: #bd8200;
 }
 
-label {
+/*label {
   display: block;
   margin-bottom: 0.5em;
   color: #333;
 }
 
 /* Radio Buttons ----------------------------------------------------------------------------------*/
+
+label {
+  display: block;
+  width:20%;
+  margin-bottom: 0.2em;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
 input[type="radio"] {
   display: none;
 }
