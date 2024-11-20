@@ -39,43 +39,51 @@ h1 {
     background-color: #dabf81;
 }
 
-/* Form Container */
-form {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+input[type="radio"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border: 2px solid #bab16e; /* Dark color */
+    border-radius: 50%;
+    background-color: #D9CAB3; /* Light color from the palette */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-form p {
-    margin: 15px 0;
+input[type="radio"]:hover {
+    background-color: #E7D3AE; /* Lighter color on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
 }
 
-/* Radio Buttons */
-form input[type="radio"] {
-    margin-right: 8px;
-    accent-color: #257180; /* Color for radio button */
+input[type="radio"]:checked {
+    background-color: #A27B5C; /* Light brown when checked */
+    border-color: #2C363F; /* Darker border color */
+    box-shadow: 0 0 10px rgba(42, 58, 63, 0.5); /* Shadow effect */
 }
 
-/* Textarea */
-form textarea {
-    width: 100%;
+/* Textarea Styling */
+textarea {
+    width: 30%;
+    height: 100px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid #2C363F; /* Dark border */
     border-radius: 5px;
-    margin-top: 10px;
+    font-size: 14px;
+    resize: none;
+    background-color: #f7e9d2; /* Light color */
 }
 
- /* input fields styling */
-        input[type="file"] {
-            width: 40%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            font-size: 1em;
-        }
+textarea:hover {
+    border-color: #A27B5C; /* Light brown border on hover */
+}
+
+textarea:focus {
+    border-color: #2C363F; /* Dark border when focused */
+    background-color: #E7D3AE; /* Lighter background on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(44, 54, 63, 0.5); /* Shadow effect */
+}
 
 /* Button styling */
         button {
