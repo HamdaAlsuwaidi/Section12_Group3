@@ -1,4 +1,4 @@
- body {
+ 	body {
             font-family: Arial, sans-serif;
             background-color: #F5F5DC; /* beige from the palette */
             color: #333;
@@ -59,3 +59,28 @@
         h4 {
             color: #FFDD99; /* Pale gold for subheadings */
         }
+	
+	
+	.topnav {
+    	    background-color: #1f333a;
+   	    overflow: hidden;
+            margin-bottom: 20px;
+	}
+
+	.topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+	}
+
+	.topnav a:hover, .topnav a.active {
+            background-color: #dabf81;
+	}
+
+	.intro {
+    	    display: flex;
+    	    justify-content: space-around;
+    	    margin-bottom: 40px;
+	}
