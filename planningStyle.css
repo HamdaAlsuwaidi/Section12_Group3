@@ -23,29 +23,20 @@ h1 {
 
 /* Navigation Styling */
 .topnav {
-  display: flex;
-  align-items: center; /* Aligns items vertically */
-  padding: 10px 20px; /* Adds spacing around the navbar */
-  background-color: #1f333a; 
-}
-
-.topnav img {
-  margin-right: 20px; /* Adds space between the logo and links */
-  vertical-align: middle; /* Ensures proper alignment of the image */
+  background-color: #1f333a;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .topnav a {
-  margin-left: 30px; /* Adds space between each link */
-  padding: 10px 15px; /* Adds padding inside each link */
-  text-decoration: none; /* Removes underline */
-  color: #333; /* Link text color */
-  font-size: 16px;
-  /* Adjusts font size */
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
-
-.topnav a.active {
-  color: #f0a500;
-  font-weight: bold;
+.topnav a:hover{
+  background-color: #dabf81;
 }
 
 input[type="radio"] {
