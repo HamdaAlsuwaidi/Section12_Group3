@@ -22,21 +22,29 @@ h1 {
 }
 
 /* Navigation Styling */
-.topnav {
-  background-color: #1f333a;
-  overflow: hidden;
-  margin-bottom: 20px;
+.topnav a {
+    margin-left: 30px; /* Spacing between links */
+    padding: 10px 15px; /* Inner spacing for links */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    font-size: 16px; /* Text size */
+    transition: all 0.3s ease; /* Smooth transition effect */
 }
 
-.topnav a {
-  color: white;
-  padding: 14px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.topnav a.active {
+    background-color: #E7D3AE; /* Background color for the active link */
+    color: #F0A500; /* Text color for the active link */
+    padding: 15px 30px; /* Extra inner spacing */
+    border-radius: 0; /* Remove rounded corners (square shape) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-weight: bold; /* Bold font style */
 }
-.topnav a:hover{
-  background-color: #dabf81;
+
+.topnav {
+    background-color: #1f333a; /* Navigation bar background */
+    display: flex; /* Align links in a row */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around the bar */
 }
 
 input[type="radio"] {
