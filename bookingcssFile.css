@@ -122,11 +122,11 @@ input[type="radio"] + label {
 }
 
 input[type="radio"]:hover + label {
-  background-color: yellow; /* Background color on hover */
+  background-color: #dabf81; /* Background color on hover */
 }
 
 input[type="radio"]:checked + label {
-  background-color: yellow; /* Background color when selected */
+  background-color: #dabf81; /* Background color when selected */
   color: #; /* Dark text color for better contrast when selected */
 }
 input[type="text"]{
