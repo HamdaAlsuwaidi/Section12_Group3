@@ -39,6 +39,11 @@ h2 {
   background-color: #f9f9f9; /* Optional background color */
 }
 
+.topnav a:hover{
+  background-color: #dabf81;
+}
+
+
 .topnav img {
   margin-right: 20px; /* Adds space between the logo and links */
   vertical-align: middle; /* Ensures proper alignment of the image */
