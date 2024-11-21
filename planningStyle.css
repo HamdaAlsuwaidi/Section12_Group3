@@ -22,22 +22,31 @@ h1 {
 }
 
 /* Navigation Styling */
-.topnav {
-  background-color: #1f333a;
-  overflow: hidden;
-  margin-bottom: 20px;
+.topnav a {
+    margin-left: 30px; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px; 
+    transition: all 0.3s ease; 
 }
 
-.topnav a {
-  color: white;
-  padding: 14px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.topnav a.active {
+    background-color: #E7D3AE; 
+    color: #F0A500; 
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    font-weight: bold; 
 }
-.topnav a:hover{
-  background-color: #dabf81;
+
+.topnav {
+    background-color: #1f333a; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
+
 
 input[type="radio"] {
     appearance: none;
