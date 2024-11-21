@@ -11,18 +11,17 @@ h4 {
 }
 
 h1, h2 {
-  color: #FFFFFF;
+  
+   color: #FFFFFF;
+  margin-top: 1em;
+  text-align: center;
 }
 
 h1 {
   text-align: center;
 }
 
-h2 {
-  color: #FFFFFF;
-  margin-top: 1em;
-  text-align: center;
-}
+
 
 /* Navigation Styling */
 /*.topnav a {
