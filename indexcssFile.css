@@ -20,60 +20,32 @@ h3 {
   color: #1f333a;
 }
 
-/* Navigation bar */
-/*.topnav {
-  background-color: #1f333a;
-  overflow: hidden;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  align-content: center;
-  margin:20px 20px;
-}
-.recetEvent{
-background-color:#f4e6b1;
-
-}
-.topnav a {
-  color: white;
-  padding: 14px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.topnav a:hover, .topnav a.active {
-  background-color: #dabf81;
-  border-radius: 6px;
-}*/
-
-
-topnav {
+.topnav {
   display: flex;
-  align-items: center; /* Aligns items vertically */
-  padding: 10px 20px; /* Adds spacing around the navbar */
-  background-color: #f9f9f9; /* Optional background color */
+  align-items: center;
+  padding: 10px 10px; 
+  background-color: #1f333a;
+  border-radius: 6px;
 }
 
 .topnav img {
-  margin-right: 20px; /* Adds space between the logo and links */
-  vertical-align: middle; /* Ensures proper alignment of the image */
+  margin-right: 20px; 
+  vertical-align: middle; 
 }
 
 .topnav a {
-  margin-left: 30px; /* Adds space between each link */
-  padding: 10px 15px; /* Adds padding inside each link */
-  text-decoration: none; /* Removes underline */
-  color: #333; /* Link text color */
+  margin-left: 30px; 
+  padding: 10px 15px; 
+  text-decoration: none;
+  color: #fff; 
   font-size: 16px;
-  /* Adjusts font size */
+  
 }
 
 .topnav a.active {
   color: #f0a500;
   font-weight: bold;
 }
-
-/* Headings styling */
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -244,5 +216,21 @@ ul{
         cursor: pointer;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
 
 
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
