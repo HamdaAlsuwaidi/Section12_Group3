@@ -1,9 +1,12 @@
-
+ .BodyLayout{
+	background-color:#1f333a;
+	}
 
 body, h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+
+  font-family: "Times New Roman";
 }
 
 body {
@@ -13,13 +16,28 @@ body {
 }
 
 h1, h2, h3 {
-  color: #1f333a;
+  color:#dabf81;
+  font-family: "Times New Roman";
+  font-weight:bold;
 }
 
 h3 {
-  color: #1f333a;
+  color: white;
+  font-family: "Times New Roman";
+}
+.About{
+color:white;
+}
+.About h3 {
+color: #dabf81;
+text-align: center;
 }
 
+.About p{
+text-align: center;
+font-family: "Times New Roman";
+font-size: 16px;
+}
 .topnav {
   display: flex;
   align-items: center;
@@ -27,6 +45,12 @@ h3 {
   background-color: #1f333a;
   border-radius: 6px;
 }
+
+
+
+
+
+
 
 .topnav img {
   margin-right: 20px; 
@@ -50,12 +74,14 @@ h1 {
   text-align: center;
   margin-top: 20px;
   color: #1f333a;
+  font-family: "Times New Roman";
 }
 
 h2 {
   text-align: center;
   margin-top: 20px;
   position: relative;
+  font-family: "Times New Roman";
 
 
 }
@@ -75,7 +101,11 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Recent events section */
+.RecentEvent-heading{
+font-family: "Times New Roman";
+
+}
+
 .recent-events {
   display: flex;
   justify-content: space-around;
@@ -94,8 +124,11 @@ h2 {
   border-radius: 10px;
   margin: 10px;
 }
+.recent-events{
+  text-align: center;
+  margin:auto ;
+}
 
-/* Footer styling */
 footer {
   background-color: #1f333a;
   color: white;
@@ -153,11 +186,12 @@ text-align:center;
 ul{
  list-style-type: none;
 }
-      * {
+       {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Times New Roman', 'Sans-Serif';
+        font-family: "Times New Roman";
+		font-weight:bold;
       }
    
       
@@ -216,21 +250,43 @@ ul{
         cursor: pointer;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+.gallery{
+color: #dabf81;
+font-family: "Times New Roman";
+font-size: 16 pt;
+
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: flex-start; 
+  overflow-x: auto; 
+  gap: 10px; 
+  padding: 10px; 
 }
 
+
+div.gallery {
+  border: 1px solid #ccc;
+  width: 180px; 
+  background-color: #1f333a;
+  border-radius: 5px; 
+  
+  overflow: hidden;
+  text-align: center; 
+  flex-shrink: 0;
+}
 
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: 100%; 
+  height: auto; 
+  display: block;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+ color: #fff;
+  font-weight:bold;
 }
