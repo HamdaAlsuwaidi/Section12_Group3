@@ -3,7 +3,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evonaire</title>
   <link rel="stylesheet" href="indexcssFile.css">
-  <script src="indexScript.js"></script>
+  <script>
+    window.onload = function () {
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.add("open-popup");
+      }
+    };
+
+    function closePopup() {
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.remove("open-popup");
+      }
+    }
+  </script>
+
   
 </head>
 
