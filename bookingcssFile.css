@@ -60,7 +60,7 @@ h1 {
 }
 
 .topnav a.active {
-  
+  color: black;
   font-weight: bold;
 }
 
