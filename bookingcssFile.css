@@ -1,62 +1,47 @@
+/* Global Body Styling */
 .body1 {
   padding: 1em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
- /* color: White;
-  /* Change text color to dark gray for better contrast */
- background-color: #1f333a;
-  color:#ffffff;
+  background-color: #1f333a;
+  color: #ffffff; /* White text for body */
 }
 
-h4 {
-  color: #FFFFFF;
-}
-
-h1, h2 {
-  color: #e6e6e6; 
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit; /* Inherit the color from the body (white) */
   margin-top: 1em;
   text-align: center;
 }
 
+/* Specific Styles for h1 */
 h1 {
   text-align: center;
 }
 
-
-
 /* Navigation Styling */
-/*.topnav a {
-  margin-left: 40px;
-  padding-left: 80px;
-  text-decoration: none;
-  color: #333;
-}*/
-/* Style for the navigation bar */
 .topnav {
   display: flex;
-  align-items: center; /* Aligns items vertically */
-  padding: 10px 20px; /* Adds spacing around the navbar */
-  background-color: #f9f9f9; /* Optional background color */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
 }
 
-.topnav a:hover{
+.topnav a:hover {
   background-color: #dabf81;
-  
 }
-
 
 .topnav img {
-  margin-right: 20px; /* Adds space between the logo and links */
-  vertical-align: middle; /* Ensures proper alignment of the image */
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 .topnav a {
-  margin-left: 30px; /* Adds space between each link */
-  padding: 10px 15px; /* Adds padding inside each link */
-  text-decoration: none; /* Removes underline */
-  color: #333; /* Link text color */
+  margin-left: 30px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
   font-size: 16px;
-  /* Adjusts font size */
 }
 
 .topnav a.active {
@@ -69,7 +54,7 @@ h1 {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0 auto;
-  background-color: white ; /* Background of form container is white */
+  background-color: white;
   border-radius: 4px;
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
@@ -94,83 +79,6 @@ label {
   margin-bottom: 0.2em;
   color: #FFFFFF;
   font-weight: bold;
-}
-
-/* Radio Buttons */
-input[type="radio"] {
-  display: none;
-}
-
-/* Align radio buttons to the left */
-.radio-container {
-  display: flex;
-  justify-content: flex-start; /* Align to the left */
-  margin-top: 1em;
-}
-
-input[type="radio"] + label {
-  display: inline-block;
-  width: 60%; /* Adjust width for proper layout */
-  text-align: center;
-  margin-left: 50px; /* Space between radio buttons */
-  padding: 1em;
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff; /* White background */
-  border-radius: 3px;
-  cursor: pointer;
-  color:#1f333a;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-input[type="radio"]:hover + label {
-  background-color: #dabf81; /* Background color on hover */
-}
-
-input[type="radio"]:checked + label {
-  background-color: #dabf81; /* Background color when selected */
-  color: #; /* Dark text color for better contrast when selected */
-}
-input[type="text"]{
-  width: 80%; /* Fixed width */
-  padding: 0.5em; /* Smaller padding */
-}
-input[type="email"]{
-  width: 80%; /* Fixed width */
-  padding: 0.5em; /* Smaller padding */
-}
-input[type="number"]{
-  width: 40%; /* Fixed width */
-  padding: 0.5em; /* Smaller pad
-/* Row and Column Layout */}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-half {
-  flex: 0 0 48%;
-  padding-right: 10px;
-}
-
-.col-half:last-of-type {
-  padding-right: 0;
-}
-
-.col-third {
-  flex: 0 0 32%;
-  padding-right: 10px;
-}
-
-.col-third:last-of-type {
-  padding-right: 0;
-}
-
-/* Responsive Styling */
-@media only screen and (max-width: 540px) {
-  .col-half, .col-third {
-    flex: 0 0 100%;
-    padding-right: 0;
-  }
 }
 
 /* Submit Button */
@@ -224,7 +132,7 @@ footer input[type="email"] {
 }
 
 footer form label {
-  color: white; /* Explicitly set the label color to white */
+  color: white;
 }
 
 footer button {
