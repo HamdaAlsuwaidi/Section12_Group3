@@ -1,51 +1,58 @@
-/* Global Body Styling */
-.body1 {
+body {
   padding: 1em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  background-color: #1f333a;
-  color: #ffffff; /* White text for body */
+  color: #333; /* Change text color to dark gray for better contrast */
+  background-color: #1f333a; /* Set background color to white */
 }
 
-/* Heading Styling */
-h1, h2, h3, h4, h5, h6 {
-  color: inherit; /* Inherit the color from the body (white) */
-  margin-top: 1em;
-  text-align: center;
+h1, h2 {
+  color: #FFFFFF;
 }
 
-/* Specific Styles for h1 */
 h1 {
   text-align: center;
 }
 
-/* Navigation Styling */
-.topnav {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f9f9f9;
+h2 {
+  color: #FFFFFF;
+  margin-top: 1em;
+  text-align: center;
+}
+h4 {
+  color: #FFFFFF;
 }
 
-.topnav a:hover {
-  background-color: #dabf81;
+/* Navigation Styling */
+/*.topnav a {
+  margin-left: 60px;
+  padding-left: 90px;
+  text-decoration: none;
+  color: #333;
+}*/
+.topnav {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  padding: 10px 20px; /* Adds spacing around the navbar */
+  background-color: #f9f9f9; /* Optional background color */
 }
 
 .topnav img {
-  margin-right: 20px;
-  vertical-align: middle;
+  margin-right: 20px; /* Adds space between the logo and links */
+  vertical-align: middle; /* Ensures proper alignment of the image */
 }
 
 .topnav a {
-  margin-left: 30px;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+  margin-left: 30px; /* Adds space between each link */
+  padding: 10px 15px; /* Adds padding inside each link */
+  text-decoration: none; /* Removes underline */
+  color: #333; /* Link text color */
+  font-size: 16px; /* Adjusts font size */
 }
 
+
 .topnav a.active {
-  color: black;
+  color: #f0a500;
   font-weight: bold;
 }
 
@@ -54,7 +61,7 @@ h1 {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff; /* Background of form container is white */
   border-radius: 4px;
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
@@ -74,11 +81,94 @@ input:focus {
   border-color: #bd8200;
 }
 
+/*label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+/* Radio Buttons ----------------------------------------------------------------------------------*/
+
 label {
   display: block;
+  width:20%;
   margin-bottom: 0.2em;
   color: #FFFFFF;
   font-weight: bold;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  background-color: #334148;
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  margin-right: 1%;
+  border: 1px solid #e5e5e5;
+  padding: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+input[type="radio"]:hover + label {
+  background-color: #bd8200; /* Background color on hover */
+}
+
+input[type="radio"]:checked + label {
+  background-color: #bd8200; /* Background color when selected */
+  color: #;} /* Dark text color for better contrast when selected */
+
+input[type="text"]{
+  width: 80%; /* Fixed width */
+  padding: 0.5em; /* Smaller padding */
+}
+
+
+  input[type="email"]{
+  width: 80%; /* Fixed width */
+  padding: 0.5em; /* Smaller padding */
+}
+
+input[type="number"]{
+  width: 40%; /* Fixed width */
+  padding: 0.5em; }/* Smaller pad 
+
+----------------------------------------------------------------------------
+/* Row and Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-half {
+  flex: 0 0 48%;
+  padding-right: 10px;
+}
+
+.col-half:last-of-type {
+  padding-right: 0;
+}
+
+.col-third {
+  flex: 0 0 32%;
+  padding-right: 10px;
+}
+
+.col-third:last-of-type {
+  padding-right: 0;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 540px) {
+  .col-half, .col-third {
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
 }
 
 /* Submit Button */
@@ -130,10 +220,10 @@ footer input[type="email"] {
   border-radius: 5px;
   border: 2px solid #1f333a;
 }
-
 footer form label {
-  color: white;
+  color: white; /* Explicitly set the label color to white */
 }
+
 
 footer button {
   padding: 10px 20px;
