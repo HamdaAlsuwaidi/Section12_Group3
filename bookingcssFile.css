@@ -1,13 +1,8 @@
+.BodyLayout{
+  background-color:#1f333a;
+  }
 
-.body1 {
-  padding: 1em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
- /* color: White;
-  /* Change text color to dark gray for better contrast */
- background-color: #1f333a;
-  color:#ffffff;
-} what is overridding becuse h1 and h2 is showing in the same color as the background
+
 
 h4 {
   color: #FFFFFF;
@@ -21,48 +16,39 @@ h1, h2 {
 
 h1 {
   text-align: center;
+  color:  #dabf81;
 }
 
 
-
-/* Navigation Styling */
-/*.topnav a {
-  margin-left: 40px;
-  padding-left: 80px;
-  text-decoration: none;
-  color: #333;
-}*/
-/* Style for the navigation bar */
 .topnav {
   display: flex;
-  align-items: center; /* Aligns items vertically */
-  padding: 10px 20px; /* Adds spacing around the navbar */
-  background-color: #f9f9f9; /* Optional background color */
+  align-items: center;
+  padding: 10px 10px; 
+  background-color: #1f333a;
+  border-radius: 6px;
 }
+
+
+
+
+
 
 .topnav a:hover{
   background-color: #dabf81;
   
 }
-
-
 .topnav img {
-  margin-right: 20px; /* Adds space between the logo and links */
-  vertical-align: middle; /* Ensures proper alignment of the image */
+  margin-right: 20px; 
+  vertical-align: middle; 
 }
 
 .topnav a {
-  margin-left: 30px; /* Adds space between each link */
-  padding: 10px 15px; /* Adds padding inside each link */
-  text-decoration: none; /* Removes underline */
-  color: #333; /* Link text color */
+  margin-left: 30px; 
+  padding: 10px 15px; 
+  text-decoration: none;
+  color: #fff; 
   font-size: 16px;
-  /* Adjusts font size */
-}
-
-.topnav a.active {
-  color: black;
-  font-weight: bold;
+  
 }
 
 /* Form Container Styling */
@@ -190,7 +176,7 @@ input[type="submit"]:hover {
   background-color: #bd8200;
 }
 
-/* Footer Styling */
+
 footer {
   background-color: #1f333a;
   color: white;
