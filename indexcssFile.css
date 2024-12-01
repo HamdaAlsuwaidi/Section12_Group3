@@ -142,7 +142,7 @@ ul {
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
-  background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/confeti.gif');
+ background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/goldConfetiiNoBACKGROUND.gif');
 }
 
 .open-popup {
