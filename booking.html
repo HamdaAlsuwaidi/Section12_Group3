@@ -9,21 +9,29 @@
   <link rel="stylesheet" href="bookingcssFile.css">
   <link rel="stylesheet" href="bookingcssFile.css">
   
- <script>
+<script>
     window.onload = function () {
-      let popup = document.getElementById("popup");
-      if (popup) {
-        popup.classList.add("open-popup");
-      }
+        let popup = document.getElementById("popup");
+        if (popup) {
+            popup.classList.add("open-popup");
+        }
     };
 
-    function closePopup() {
-      let popup = document.getElementById("popup");
-      if (popup) {
-        popup.classList.remove("open-popup");
-      }
+    function openPopup() {
+        let popup = document.getElementById("popup");
+        if (popup) {
+            popup.classList.add("open-popup");
+        }
     }
-  </script>
+
+    function closePopup() {
+        let popup = document.getElementById("popup");
+        if (popup) {
+            popup.classList.remove("open-popup");
+        }
+    }
+</script>
+
 
   
 </head>
