@@ -1,37 +1,37 @@
-.BodyLayout{
-  background-color:#1f333a;
-  }
+/* Background Color for the Body */
+.BodyLayout {
+  background-color: #1f333a;
+}
 
-
-
+/* Text Color for h4 */
 h4 {
   color: #FFFFFF;
 }
 
+/* Heading Styles */
 h1, h2 {
-  color: #e6e6e6; 
+  color: #e6e6e6;
   margin-top: 1em;
   text-align: center;
 }
 
 h1 {
-  text-align: center;
-  color:  #dabf81;
+  color: #dabf81;
 }
 
-
+/* Top Navigation Styling */
 .topnav {
   display: flex;
   align-items: center;
-  padding: 10px 10px; 
+  padding: 10px 10px;
   background-color: #1f333a;
   border-radius: 6px;
 }
 
-
-
+/* Popup Styling */
 .popup {
   width: 400px;
+  height: auto;
   background: #fff;
   border-radius: 6px;
   position: absolute;
@@ -39,31 +39,47 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
-  padding: 0 30px 30px;
+  padding: 40px;
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
-  background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/confeti.gif');
+  background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/goldConfetiiNoBACKGROUND.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
-
-.topnav a:hover{
+.popup.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+ .popup button {
+      background:  #dabf81;/* THE BACKGROUND COLOR OF THE CLOSE BUTTON */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+/* Top Navigation Link Hover */
+.topnav a:hover {
   background-color: #dabf81;
-  
-}
-.topnav img {
-  margin-right: 20px; 
-  vertical-align: middle; 
 }
 
+/* Top Navigation Image Styling */
+.topnav img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+/* Top Navigation Links Styling */
 .topnav a {
-  margin-left: 30px; 
-  padding: 10px 15px; 
+  margin-left: 30px;
+  padding: 10px 15px;
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
   font-size: 16px;
-  
 }
 
 /* Form Container Styling */
@@ -71,12 +87,12 @@ h1 {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0 auto;
-  background-color: white ; /* Background of form container is white */
+  background-color: white;
   border-radius: 4px;
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
 
-/* Form Elements Styling */
+/* Form Element Styling */
 input, select {
   width: 100%;
   padding: 1em;
@@ -98,52 +114,56 @@ label {
   font-weight: bold;
 }
 
-/* Radio Buttons */
+/* Hide Radio Buttons and Style Labels */
 input[type="radio"] {
   display: none;
 }
 
-/* Align radio buttons to the left */
 .radio-container {
   display: flex;
-  justify-content: flex-start; /* Align to the left */
+  justify-content: flex-start;
   margin-top: 1em;
 }
 
 input[type="radio"] + label {
   display: inline-block;
-  width: 60%; /* Adjust width for proper layout */
+  width: 60%;
   text-align: center;
-  margin-left: 50px; /* Space between radio buttons */
+  margin-left: 50px;
   padding: 1em;
   border: 1px solid #e5e5e5;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
-  color:#1f333a;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  color: #1f333a;
+  transition: background-color 0.3s ease;
 }
 
 input[type="radio"]:hover + label {
-  background-color: #dabf81; /* Background color on hover */
+  background-color: #dabf81;
 }
 
 input[type="radio"]:checked + label {
-  background-color: #dabf81; /* Background color when selected */
-  color: #; /* Dark text color for better contrast when selected */
+  background-color: #dabf81;
+  color: #1f333a;
 }
-input[type="text"]{
-  width: 80%; /* Fixed width */
-  padding: 0.5em; /* Smaller padding */
+
+input[type="text"] {
+  width: 80%;
+  padding: 0.5em;
 }
-input[type="email"]{
-  width: 80%; /* Fixed width */
-  padding: 0.5em; /* Smaller padding */
+
+input[type="email"] {
+  width: 80%;
+  padding: 0.5em;
 }
-input[type="number"]{
-  width: 40%; /* Fixed width */
-  padding: 0.5em; /* Smaller pad
-/* Row and Column Layout */}
+
+input[type="number"] {
+  width: 40%;
+  padding: 0.5em;
+}
+
+/* Row and Column Layout */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +187,7 @@ input[type="number"]{
   padding-right: 0;
 }
 
-/* Responsive Styling */
+/* Responsive Layout */
 @media only screen and (max-width: 540px) {
   .col-half, .col-third {
     flex: 0 0 100%;
@@ -175,7 +195,7 @@ input[type="number"]{
   }
 }
 
-/* Submit Button */
+/* Submit Button Styling */
 input[type="submit"] {
   background-color: #334148;
   color: #fff;
@@ -191,10 +211,10 @@ input[type="submit"]:hover {
   background-color: #bd8200;
 }
 
-
+/* Footer Styling */
 footer {
   background-color: #1f333a;
-   background-image: url("https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/pattern.png");
+  background-image: url("https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/pattern.png");
   color: white;
   padding: 20px;
   margin-top: 40px;
@@ -220,14 +240,13 @@ footer form {
 
 footer input[type="email"] {
   padding: 10px;
-  width: 200px;
-  margin-right: 10px;
+  width: 200px;margin-right: 10px;
   border-radius: 5px;
   border: 2px solid #1f333a;
 }
 
 footer form label {
-  color: white; /* Explicitly set the label color to white */
+  color: white;
 }
 
 footer button {
