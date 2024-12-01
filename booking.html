@@ -1,5 +1,4 @@
 <!DOCTYPE html>
- <!-- BOOKING PAGE AFRA ALKETBI -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,48 +6,42 @@
   <title>Booking Page</title>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="bookingcssFile.css">
-  <link rel="stylesheet" href="bookingcssFile.css">
   
-<script>
-    window.onload = function () {
-        let popup = document.getElementById("popup");
-        if (popup) {
-            popup.classList.add("open-popup");
-        }
-    };
-
+ 
+  <script>
     function openPopup() {
-        let popup = document.getElementById("popup");
-        if (popup) {
-            popup.classList.add("open-popup");
-        }
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.add("open-popup");
+      }
     }
 
     function closePopup() {
-        let popup = document.getElementById("popup");
-        if (popup) {
-            popup.classList.remove("open-popup");
-        }
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.remove("open-popup");
+      }
     }
-</script>
-
-
-  
+  </script>
 </head>
+
 <body class="BodyLayout">
   <h1>Evonaire</h1>
 
-
-   <div class="topnav">
-      <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/logo _navie _blue.png" width="80" height="80" alt="Banner">
+  <!-- Top Navigation Bar -->
+  <div class="topnav">
+    <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/logo_navie_blue.png" width="80" height="80" alt="Banner">
     <a href="index.html">Home</a>
     <a href="About us.html">About Us</a>
     <a href="Planning.html">Planning</a>
-    <a  class="active" href="#booking">Booking</a>
+    <a class="active" href="#booking">Booking</a>
     <a href="ContactUs.html">Contact Us</a>
   </div>
- <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/bookingBanner01.png" width="100%" height="400" alt="Banner">
- <h1>Make It Unforgettable <br> Reserve Your Event Planner Now!</h1>
+
+  <!-- Booking Banner Image -->
+  <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/bookingBanner01.png" width="100%" height="400" alt="Banner">
+  
+  <h1>Make It Unforgettable <br> Reserve Your Event Planner Now!</h1>
 
   <!-- Main Form Section in Two Columns -->
   <div class="row">
@@ -64,12 +57,11 @@
         <input type="email" id="email" name="email" size="25" maxlength="30" required><br><br>
 
         <label for="phone"><h4>Phone Number:</h4></label><br>
-        <input type="text" id="phone" name="phone" size="25" pattern="\+?[0-9]{0,3}[0-9]{10}" maxlength="14" placeholder="+971-XXX-XXXXXXX" required="+971-XXX-XXXXXXX"><br><br>
-    <label for="guests">Number of Guests:</label><br>
-<input type="number" id="guests" name="guests" min="100" max="1000" step="100" required><br><br>
+        <input type="text" id="phone" name="phone" size="25" pattern="\+?[0-9]{0,3}[0-9]{10}" maxlength="14" placeholder="+971-XXX-XXXXXXX" required><br><br>
 
-
-
+        <label for="guests"><h4>Number of Guests:</h4></label><br>
+        <input type="number" id="guests" name="guests" min="100" max="1000" step="100" required><br><br>
+      </p>
     </div>
 
     <div class="col-half">
@@ -89,15 +81,23 @@
         <label><h4>Select a Date</h4></label><br>
         <label for="date"><h4>Choose a date:</h4></label>
         <input type="date" id="date" name="date"><br>
+
         <label for="time"><h4>Choose a time:</h4></label>
         <input type="time" id="time" name="time"><br><br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="openPopup()">
       </p>
     </div>
   </div>
 
-  <!-- Footer Section in Three Columns -->
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <h3>Booking Successful!</h3>
+    <p>Thank you for your booking! We will get in touch with you soon.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <!-- Footer Section -->
   <footer class="row">
     <div class="col-third">
       <h3>Contact Us</h3>
@@ -120,6 +120,9 @@
         <li><a href="About us.html">About Us</a></li>
         <li><a href="Planning.html">Planning</a></li>
         <li><a href="#booking">Booking</a></li>
-        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
       </ul>
     </div>
+  </footer>
+</body>
+</html>
