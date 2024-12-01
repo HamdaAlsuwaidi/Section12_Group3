@@ -154,9 +154,9 @@ textarea:focus {
     margin-top: 5px;
 }
 
-/* Footer */
 footer {
   background-color: #1f333a;
+   background-image: url("https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/pattern.png");
   color: white;
   padding: 20px;
   margin-top: 40px;
@@ -188,6 +188,10 @@ footer input[type="email"] {
   border: 2px solid #1f333a;
 }
 
+footer form label {
+  color: white; /* Explicitly set the label color to white */
+}
+
 footer button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -195,6 +199,10 @@ footer button {
   background-color: #dabf81;
   color: white;
   cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #cfa968;
 }
 
 footer button:hover {
