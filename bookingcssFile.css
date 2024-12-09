@@ -24,17 +24,17 @@ h1 {
   display: flex;
   align-items: center;
   padding: 10px 10px;
-  background-color: #1f333a;
-  border-radius: 6px;
+  background-color: #1f333a;/* Set the navigation background  color to match the page color */
+  border-radius: 6px;/* Rounded corners */
 }
 
 /* Popup Styling */
 .popup {
   width: 400px;
-  height: auto;
+  height: auto;/* Let the height adjust automatically */
   background: #fff;
-  border-radius: 6px;
-  position: absolute;
+  border-radius: 6px;/* Rounded corners */
+  position: absolute; 
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
@@ -140,7 +140,7 @@ input[type="radio"] + label {
 }
 
 input[type="radio"]:hover + label {
-  background-color: #dabf81;
+  background-color: #dabf81; /* hover effect */
 }
 
 input[type="radio"]:checked + label {
@@ -187,7 +187,7 @@ input[type="number"] {
   padding-right: 0;
 }
 
-/* Responsive Layout */
+/* Responsive Layout - Adjust Layout for Smaller Screens */
 @media only screen and (max-width: 540px) {
   .col-half, .col-third {
     flex: 0 0 100%;
