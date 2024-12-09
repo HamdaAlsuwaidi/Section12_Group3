@@ -142,7 +142,7 @@ h1, h2, h3 {
   font-family: "Times New Roman";
 }
 
-/* adjusting the images size to fit the boarder */
+/* adjusting the images size to fit  */
 .recent-events {
   display: flex;
   justify-content: space-around;
@@ -189,6 +189,7 @@ ul {
   overflow-x: auto;
   gap: 10px;
   padding: 10px;
+ align-content: center;
 }
 
 div.gallery {
