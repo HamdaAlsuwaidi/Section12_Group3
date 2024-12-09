@@ -13,7 +13,7 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 
-/* all heading element align in the center */
+/* all heading elements aligned in the center */
 h1, h2, h3 {
   color: #dabf81;
   font-weight: bold;
@@ -37,7 +37,7 @@ h1, h2, h3 {
 /* button ok for the pop up block*/
 .btn { 
   padding: 10px 60px;
-  background: #fff;
+  background: #fff; /*white color */
   border: 0;
   outline: none;
   cursor: pointer;
@@ -47,22 +47,32 @@ h1, h2, h3 {
 }
 
 .popup {
-  width: 400px;
-  background: #fff;
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  text-align: center;
-  padding: 0 30px 30px;
-  color: #333;
-  visibility: hidden;
+  width: 400px; /* Sets the width of the popup to 400px */
+  background: #fff; /* Sets the background color white */
+  border-radius: 6px; 
+  
+  position: absolute; /* Positions the popup to the center */
+  top: 0; /* Sets the  position of the popup at the top of the screen */
+  left: 50%; /* Centers the popup to the middle of the screen */
+ 
+  transform: translate(-50%, -50%) scale(0.1); 
+  /* 
+    - Moves the popup 50%  left to center (in a horizontal way)
+    - Moves it 50% of  height up to center ( in a verticle way)
+    - Scales the popup down to 10% of its original size
+  */
+
+  text-align: center; 
+  padding: 0 30px 30px; 
+  color: #333; 
+  visibility: hidden; /* Makes the popup hidden by default  so it shows when refreshing the page*/
   transition: transform 0.4s, top 0.4s;
- background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/goldConfetiiNoBACKGROUND.gif');
+  background-image: url('https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/goldConfetiiNoBACKGROUND.gif'); 
+ 
 }
 
-.open-popup {
+
+.open-popup { /* will open the pop up through transform animation + function is  in the html file*/
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
