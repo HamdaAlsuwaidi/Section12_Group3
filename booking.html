@@ -31,7 +31,9 @@
 
   <!-- Top Navigation Bar -->
   <div class="topnav">
-   <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/logo _navie _blue.png" width="80" height="80" alt="logo">
+   <img src="https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/logo _navie _blue.png" width="80" height="80" alt="logo">  
+<!-- image code to add the logo in the banner  -->
+<!-- menu icons links to the other pages in the website  -->
     <a href="index.html">Home</a>
     <a href="About us.html">About Us</a>
     <a href="Planning.html">Planning</a>
@@ -44,9 +46,10 @@
   
   <h1>Make It Unforgettable <br> Reserve Your Event Planner Now!</h1>
 
-  <!-- Main Form Section in Two Columns -->
+  <!-- Form Section -->
   <div class="row">
     <div class="col-half">
+<!-- input feilds name - email -phonenumber - number of guest first column -->
       <p>
         <label for="first-name"><h4>First Name:</h4></label><br>
         <input type="text" id="first-name" name="first_name" required><br><br>
@@ -64,7 +67,7 @@
         <input type="number" id="guests" name="guests" min="100" max="1000" step="100" required><br><br>
       </p>
     </div>
-
+<!--form second column radio button selection- time - date - submit button -->
     <div class="col-half">
       <p>
         <label><h4>What is your occasion?</h4></label><br>
@@ -85,7 +88,7 @@
 
         <label for="time"><h4>Choose a time:</h4></label>
         <input type="time" id="time" name="time"><br><br>
-
+<!-- submits button with inline javascript to opent the popup window  -->
         <input type="submit" value="Submit" onclick="openPopup()">
       </p>
     </div>
