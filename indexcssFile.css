@@ -1,124 +1,35 @@
 
+ /* to change background color to dark blue */
 .BodyLayout {
   background-color: #1f333a;
+   padding: 20px;
 }
 
-body, h1, h2, h3, p, ul, li, a {
+/* to adjust elements content all at once */
+body, h1, h2, h3, p, ul, li, a { 
   margin: 0;
   padding: 0;
   font-family: "Times New Roman";
 }
 
-body {
-  color: #1f333a;
-  line-height: 1.6;
-  padding: 20px;
-}
 
+/* all heading element align in the center */
 h1, h2, h3 {
   color: #dabf81;
   font-weight: bold;
-  text-align: center; /* Ensuring consistent alignment for headings */
+  text-align: center;
 }
 
-h3 {
-  color: white;
-}
 
-.About {
-  color: white;
-}
-
+/* Adjusting the title of the paragraph */
 .About h3 {
   color: #dabf81;
-  text-align: center;
-}
-
-.About p {
-  text-align: center;
-  font-family: "Times New Roman";
-  font-size: 16px;
-}
-
-.topnav {
-  display: flex;
-  align-items: center;
-  padding: 10px 10px;
-  background-color: #1f333a;
-  border-radius: 6px;
-}
-
-.topnav a:hover {
-  background-color: #dabf81;
-}
-
-.topnav img {
-  margin-right: 20px;
-  vertical-align: middle;
-}
-
-.topnav a {
-  margin-left: 30px;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
-
-.topnav a.active {
-  color: #f0a500;
-  font-weight: bold;
-}
-
-.service-images img {
-  width: 200px;
-  height: 200px; /* Fixed typo */
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-images {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
-}
-
-.RecentEvent-heading {
-  font-family: "Times New Roman";
-}
-
-.recent-events {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
-  text-align: center;
-  margin: auto;
-}
-
-.recent-events div {
-  text-align: center;
-  background: #1f333a;
-  border-radius: 15px;
-}
-
-.recent-events img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  margin: 10px;
+  text-align: left;
 }
 
 
-.Contact {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.btn {
+/* button ok for the pop up block*/
+.btn { 
   padding: 10px 60px;
   background: #fff;
   border: 0;
@@ -171,6 +82,90 @@ ul {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/*  Adjustment  in Content of About Paragraph */
+.About p {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 16px;
+   color: white;
+}
+
+
+/*  Top navigation bar  */
+.topnav {
+  display: flex; /* Content remain in it place when you move the page */
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #1f333a;
+  border-radius: 6px;
+}
+
+.topnav a:hover {
+  background-color: #dabf81;
+}
+
+/*Logo in the navigation bar styling */
+.topnav img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+
+/* For the links in the bar */
+.topnav a {
+  margin-left: 30px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* it shows a color when a user is on a certain page the current page */
+.topnav a.active {
+  color: #f0a500;
+  font-weight: bold;
+}
+
+
+/* heading for recent event section*/
+.RecentEvent-heading {
+  font-family: "Times New Roman";
+}
+
+/* adjusting the images size to fit the boarder */
+.recent-events {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+/* style the container of the recent event */
+.recent-events div {
+  text-align: center;
+  background: #1f333a;
+  border-radius: 15px;
+}
+
+.recent-events img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.Contact {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
 .gallery {
   color: #dabf81;
   font-family: "Times New Roman";
@@ -215,84 +210,52 @@ footer {
   background-color: #1f333a;
   background-image: url("https://github.com/HamdaAlsuwaidi/Section12_Group3/raw/main/Images/pattern.png");
   color: white;
-  padding: 40px 20px; /* Increased padding for better spacing */
-  margin-top: 40px;
-  display: flex; /* Flexbox for alignment */
-  justify-content: space-between;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  padding: 10px;
+  margin-top: 20px;
+  align-content: center;
 }
 
-footer h3 {
-  margin-bottom: 15px; /* Slightly increased spacing */
-  color: #dabf81;
-  font-size: 18px; /* Enhanced size */
-}
+
 
 footer a {
   color: white;
   text-decoration: none;
-  font-size: 14px; /* Smaller font for links */
+
 }
 
 footer a:hover {
   color: #dabf81;
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-footer ul li {
-  margin-bottom: 10px; /* Add spacing between links */
-}
 
-footer .section {
-  flex: 1; /* Equal width for sections */
-  min-width: 200px; /* Ensures columns don’t collapse */
-  margin-right: 20px;
-}
 
-footer .section:last-child {
-  margin-right: 0; /* No margin on the last column */
-}
-
-footer form {
-  margin-top: 10px;
-}
-
-footer input[type="email"] {
-  padding: 10px;
-  width: 200px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 2px solid #1f333a;
-}
-
-footer form label {
-  color: white; /* Explicitly set the label color to white */
-}
-
-footer button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #dabf81;
-  color: white;
-  cursor: pointer;
-}
 
 footer button:hover {
   background-color: #cfa968;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column; /* Stack sections on smaller screens */
-  }
-  footer .section {
-    margin-bottom: 20px; /* Add spacing between sections */
-  }
+
+.ContactFooter h3{
+  text-align: center;
+}
+.ContactFooter{
+  text-align: left;
+}
+
+.SocialMedia {
+  padding :20px;
+  text-align: center;
+}
+.SocialMedia h3{
+  text-align: center;
+}
+  
+
+
+.Pages{
+  text-align: center;
+}
+.Pages h3{
+  text-align: center;
 }
