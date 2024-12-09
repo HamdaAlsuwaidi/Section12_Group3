@@ -16,14 +16,16 @@
 <body class = "BodyLayout">
   <!--<script src="indexScript.js"></script>-->
  <script>
-    window.onload = function () {
-      let popup = document.getElementById("popup");
-      if (popup) {
+   // onload allows the web page to run automatically when the page is  loaded 
+    window.onload = function () { 
+      let popup = document.getElementById("popup"); // read popup from class id 
+      if (popup) { // Adds the "open-popup" class to the popup element
+                    //  used to trigger animations, visibility, or other styles defined in CSS
         popup.classList.add("open-popup");
       }
     };
 
-    function closePopup() {
+    function closePopup() { // will remove the popup , basicaly the reverse of the top function
       let popup = document.getElementById("popup");
       if (popup) {
         popup.classList.remove("open-popup");
