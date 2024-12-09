@@ -10,13 +10,28 @@
 
   
 </head>
+  <script>
+    window.onload = function () {
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.add("open-popup");
+      }
+    };
+
+    function closePopup() {
+      let popup = document.getElementById("popup");
+      if (popup) {
+        popup.classList.remove("open-popup");
+      }
+    }
+  </script>
 
 <body class = "BodyLayout">
   <script src="indexScript.js"></script>
 
  
 <div>
-
+<!--Pop up screen -->
       <div class="popup" id="popup">
         <h2>Welcome to Evonaire</h2>
         <p>Where your event planning dreams come to life. Let us help you create unforgettable moments!.</p>
